@@ -4,7 +4,7 @@ import pandas as pd
 def load_model_and_encoders(model_path, encoders_path):
     """Load the trained model and label encoders."""
     model = joblib.load(model_path)
-    encoders = joblib.load(encoders_path)
+    encoders = joblib.load(
     return model, encoders
 
 def prepare_input_data(input_data, encoders):
