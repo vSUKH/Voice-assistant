@@ -1,0 +1,44 @@
+<!-- 
+<div id="m"></div>
+<script>
+
+function show()
+{         
+  var a = ["a1.png","a2.png","a3.png","a4.png","a5.png","a6.png"]
+  var s = "<table border=1>";
+  for(i=0;i<a.length;i++)
+    {
+        for(j=1;j<=10;j++)
+      { 
+        s+="<td><img src="+a[i]+"  width=100 height=100>";      
+      }
+      s+= "<tr>";
+    }
+  s+="</table>";
+  m.innerHTML = s
+
+}
+show();
+</script> -->
+
+<div id="m"></div>
+<script>
+   
+  function add()
+  {
+    var a = ['a1.png',"a2.png","a3.png"]
+   var s = "<table border=1>";
+    for (i=0;i<a.length;i++)
+   {
+    for (j=1;j<10;j++)
+   {
+    s+="<td><img src = "+a[i] +" width=100 height=100>";
+   }
+   s+= "<tr>";
+   }
+   s+="<table>";
+   m.innerHTML = s
+
+  }
+  add();
+</script>
