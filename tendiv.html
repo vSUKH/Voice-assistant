@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<body>
+
+<h2>JavaScript</h2>
+<p>Dividing tensors with tensorflow.js</p>
+
+<div id="demo"></div>
+
+<script>
+const tensorA = tf.tensor([2, 4, 6, 8]);
+const tensorB = tf.tensor([1, 2, 2, 2]);
+
+// Tensor Division
+const tensorNew = tensorA.div(tensorB);
+
+// Result: [ 2, 2, 3, 4 ]
+document.getElementById("demo").innerHTML = tensorNew;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<body>
+
+<h1>TensorFlow JavaScript</h1>
+<h3>Get the arrays behind a tensor:</h3>
+
+<div id="demo"></div>
+
+<script>
+const myArr = [[1, 2], [3, 4]];
+const shape = [2, 2];
+const tensorA = tf.tensor(myArr, shape);
+tensorA.array().then(array => display(array[1]));
+
+// Result: 1,2
+function display(data) {
+  document.getElementById("demo").innerHTML = data;
+}
+</script>
+</body>
+</html>
