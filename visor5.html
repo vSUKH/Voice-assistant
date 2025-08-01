@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+<body>
+
+<h2>Tensorflow Visor</h2>
+<div id="demo"></div>
+
+<script>
+const surface = document.getElementById('demo');
+
+let values = [
+  {x: 1, y: 20},
+  {x: 2, y: 30},
+  {x: 3, y: 15},
+  {x: 4, y: 12}
+];
+
+tfvis.render.linechart(surface, {values});
+</script>
+
+</body>
+</html>
